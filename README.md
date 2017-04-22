@@ -1,4 +1,7 @@
-# test coverage for  [d3-scale (v1.0.5)](https://d3js.org/d3-scale/)  [![npm package](https://img.shields.io/npm/v/npmtest-d3-scale.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3-scale) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3-scale.svg)](https://travis-ci.org/npmtest/node-npmtest-d3-scale)
+# npmtest-d3-scale
+
+#### basic test-coverage for  [d3-scale (v1.0.5)](https://d3js.org/d3-scale/)  [![npm package](https://img.shields.io/npm/v/npmtest-d3-scale.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3-scale) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3-scale.svg)](https://travis-ci.org/npmtest/node-npmtest-d3-scale)
+
 #### Encodings that map abstract data to visual representation.
 
 [![NPM](https://nodei.co/npm/d3-scale.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/d3-scale)
@@ -90,7 +93,8 @@
         "pretest": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -g d3-array:d3,d3-collection:d3,d3-color:d3,d3-format:d3,d3-interpolate:d3,d3-time:d3,d3-time-format:d3 -n d3 -o build/d3-scale.js -- index.js",
         "test": "TZ=America/Los_Angeles tape 'test/**/*-test.js' && eslint index.js src test"
     },
-    "version": "1.0.5"
+    "version": "1.0.5",
+    "bin": {}
 }
 ```
 
